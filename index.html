@@ -8,7 +8,7 @@
 <body>
     <div id="app">
         <button @click="generateEmail(10)">Genera Email</button>
-        <ul>
+        <ul v-if="emails.length === 10">
             <li v-for="email in emails">{{ email }}</li>
         </ul>
 
